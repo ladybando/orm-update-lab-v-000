@@ -53,7 +53,7 @@ end
    #binding.pry
   end
   
-  def self.new_from_db(id, name, grade)
+  def self.new_from_db(row)
 
   end
 
