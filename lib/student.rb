@@ -38,7 +38,11 @@ end
       SQL
       DB[:conn].execute(sql, self.name, self.grade)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
+<<<<<<< HEAD
    
+=======
+    binding.pry  
+>>>>>>> 9be390ef1b990a143730b326ee77de62ef0f7f71
     end
   end
     
@@ -47,10 +51,17 @@ end
       DB[:conn].execute(sql, self.name, self.grade, self.id)
     end
   
+<<<<<<< HEAD
   def self.create(name, grade)
     new_student = self.new(name, grade)
     new_student.save
    #binding.pry
   end
+=======
+  # def self.create(name, grade)
+  #   #binding.pry
+  #   new_student = self.new(name, grade)
+  # end
+>>>>>>> 9be390ef1b990a143730b326ee77de62ef0f7f71
 
 end
